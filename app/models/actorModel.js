@@ -6,7 +6,8 @@ module.exports = (sequelize) => {
     const attributes = {
         actor_id: {
             type: DataTypes.SMALLINT,
-            primaryKey: true
+            primaryKey: true,
+            autoIncrement: true,
         },
         first_name: {
             type: DataTypes.STRING(45),
